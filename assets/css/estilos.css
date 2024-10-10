@@ -1,0 +1,28 @@
+nav{
+    background-color: rgb(235, 46, 46);
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+    overflow: hidden;
+
+}
+
+#super{
+    width: 150px;
+    height: 50px;
+    margin: 0.5%;
+    background-color: white;
+    border-style: double;
+    border: solid;
+    border-radius: 10px;
+    font-size: large;
+    text-align: center;
+    
+    
+}
+
+footer{
+    height: 50px;
+    width: 100%;
+    background-color: rgb(235, 46, 46);
+}

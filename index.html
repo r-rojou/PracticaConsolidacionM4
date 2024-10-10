@@ -1,0 +1,189 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link href="./assets/css/estilos.css" rel="stylesheet">
+    <link href="./assets/css/bootstrap.css" rel="stylesheet">
+    <title>Practica Consolidación</title>
+  </head>
+
+  <body onload="asignarEventos()">    
+    <nav>
+      <p id="super">Supermercado</p>
+    
+    </nav>
+    <br>
+    <br>
+    <div class="container d-flex justify-content-center">    
+      <h2>Productos disponibles</h2>
+    </div>
+  
+    <br><br>
+
+
+
+
+
+    <div class="container">
+      <div class="row">
+        <div class="col">
+          <div class="card" style="width: 18rem;">
+            <img src="./assets/img/leche.jpg" class="card-img-top" alt="Leche">
+            <div class="card-body">
+              <h5 class="card-title">Leche</h5>
+            </div>
+            <ul class="list-group list-group-flush">
+              <li class="list-group-item">Precio: <span id="precioLeche">1000</span></li>
+              <li class="list-group-item">Cantidad: <span id="cantidadLeche">0</span></li>
+              <div class="row">
+                <div class="col-6">
+                  <button class="btn btn-dark w-100" onclick="agregarProducto('Leche', 1000)">Agregar</button>
+                </div>
+                <div class="col-6">
+                  <button class="btn btn-danger w-100" onclick="quitarProducto('Leche', 1000)">Quitar</button>
+                </div>
+              </div>
+            </ul>
+          </div>     
+        </div>
+
+
+        <div class="col">
+          <div class="card" style="width: 18rem;">
+            <img src="./assets/img/panmolde.jpg" class="card-img-top" alt="Pan de molde">
+            <div class="card-body">
+              <h5 class="card-title">Pan de Molde</h5>
+            </div>
+            <ul class="list-group list-group-flush">
+              <li class="list-group-item">Precio: <span id="precioPan">2000</span></li>
+              <li class="list-group-item">Cantidad: <span id="cantidadPan">0</span></li>
+              <div class="row">
+                <div class="col-6">
+                  <button class="btn btn-dark w-100" onclick="agregarProducto('Pan', 2000)">Agregar</button>
+                </div>
+                <div class="col-6">
+                  <button class="btn btn-danger w-100" onclick="quitarProducto('Pan', 2000)">Quitar</button>
+                </div>    
+              </div>
+            </ul>
+          </div>     
+        </div>
+
+
+        <div class="col">
+          <div class="card" style="width: 18rem;">
+            <img src="./assets/img/queso.jpg" class="card-img-top" alt="Queso">
+            <div class="card-body">
+              <h5 class="card-title">Queso</h5>
+            </div>
+            <ul class="list-group list-group-flush">
+              <li class="list-group-item">Precio: <span id="precioQueso">1200</span></li>
+              <li class="list-group-item">Cantidad: <span id="cantidadQueso">0</span></li>
+              <div class="row">
+                <div class="col-6">   
+                  <button class="btn btn-dark w-100" onclick="agregarProducto('Queso', 1200)">Agregar</button>
+                </div>
+                <div class="col-6">
+                  <button class="btn btn-danger w-100" onclick="quitarProducto('Queso', 1200)">Quitar</button>
+                </div>   
+              </div>
+            </ul>
+          </div>        
+        </div>
+      </div>
+
+      <br>
+      <br>
+
+
+      <div class="row">
+        <div class="col">
+          <div class="card" style="width: 18rem;">
+            <img src="./assets/img/mermelada.png" class="card-img-top" alt="Mermelada">
+            <div class="card-body">
+              <h5 class="card-title">Mermelada</h5>
+            </div>
+            <ul class="list-group list-group-flush">
+              <li class="list-group-item">Precio: <span id="precioMermelada">890</span></li>
+              <li class="list-group-item">Cantidad: <span id="cantidadMermelada">0</span></li>
+              <div class="row">
+                <div class="col-6">
+                  <button class="btn btn-dark w-100" onclick="agregarProducto('Mermelada', 890)">Agregar</button>
+                </div>
+                <div class="col-6">
+                  <button class="btn btn-danger w-100" onclick="quitarProducto('Mermelada', 890)">Quitar</button>
+                </div>
+              </div>
+            </ul>
+          </div> 
+        </div>
+
+
+        <div class="col">
+          <div class="card" style="width: 18rem;">
+            <img src="./assets/img/azucar.jpg" class="card-img-top" alt="Azúcar">
+            <div class="card-body">
+              <h5 class="card-title">Azúcar</h5>
+            </div>
+            <ul class="list-group list-group-flush">
+              <li class="list-group-item">Precio: <span id="precioAzucar">1300</span></li>
+              <li class="list-group-item">Cantidad: <span id="cantidadAzucar">0</span></li>
+              <div class="row">
+                <div class="col-6">
+                  <button class="btn btn-dark w-100" onclick="agregarProducto('Azucar', 1300)">Agregar</button>
+                </div>
+                <div class="col-6">
+                  <button class="btn btn-danger w-100" onclick="quitarProducto('Azucar', 1300)">Quitar</button>
+                </div> 
+              </div>
+            </ul>
+          </div>        
+        </div>
+
+
+        <div class="col">
+          <div class="card" style="width: 18rem;">
+            <img src="./assets/img/chocolate.png" class="card-img-top" alt="Chocolate">
+            <div class="card-body">
+              <h5 class="card-title">Chocolate</h5>
+            </div>
+            <ul class="list-group list-group-flush">
+              <li class="list-group-item">Precio: <span id="precioChocolate">2500</span></li>
+              <li class="list-group-item">Cantidad <span id="cantidadChocolate">0</span></li>
+              <div class="row">
+                <div class="col-6">
+                  <button class="btn btn-dark w-100" onclick="agregarProducto('Chocolate', 2500)">Agregar</button>
+                </div>
+                <div class="col-6">
+                  <button class="btn btn-danger w-100" onclick="quitarProducto('Chocolate', 2500)">Quitar</button>
+                </div>    
+              </div>
+            </ul>
+          </div>       
+        </div>
+      </div>
+    </div>
+
+
+<br><br>
+
+<div class="container d-flex justify-content-center">
+  <button class="btn btn-lg btn-dark" id="botonPagar">Total a pagar: <span id="txtValorFinalAPagar">0</span></button>
+</div>
+
+<br><br>
+
+<footer class="d-flex justify-content-end" style="color: white">
+  <p>Creado por Raúl Rojo 2024</p>
+</footer>
+
+
+
+
+
+    <script src="./assets/js/script.js"></script>
+    <script src="./assets/js/bootstrap.bundle.js"></script>
+
+  </body>
+</html>
